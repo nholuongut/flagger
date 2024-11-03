@@ -1,0 +1,11 @@
+namespace: flagger-system
+commonLabels:
+  app: flagger
+resources:
+  - account.yaml
+  - rbac.yaml
+  - crd.yaml
+  - deployment.yaml
+images:
+  - name: nholuongut/flagger
+    newTag: 0.18.3
